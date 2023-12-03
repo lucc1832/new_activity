@@ -2,6 +2,7 @@ package com.example.newactivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -10,25 +11,27 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btn_1, btn2;
+    private static final String TAG = "TAG" ;
+    private Button btn_1_first, btn_1_xiangmu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //绑定一个id
-        btn_1 = findViewById(R.id.btn_1_first);
+        btn_1_first = findViewById(R.id.btn_1_first);
         //显性试图点击跳转
-        btn_1.setOnClickListener(view -> {
-            Intent intent = new Intent(this, firstActivity.class);
-            startActivity(intent);
+        btn_1_first.setOnClickListener(view -> {
+            startActivity(new Intent(this, firstActivity.class));
             //点击按钮提示  LENGTH_SHORT短暂显示 LENGTH_LONG 长时间显示
             Toast.makeText(this, "跳转到下一页", Toast.LENGTH_SHORT).show();
+            Log.d(TAG,"123213");
+//             finish();  //结束活动
         });
-        btn2 = findViewById(R.id.btn_1_xiangmu);
-        Intent intent;
-        btn2.setOnClickListener({
-                Intent intent = new Intent(this,SecondActivity.class);
-                startActivity(intent);
+        btn_1_xiangmu = findViewById(R.id.btn_1_xiangmu);
+        btn_1_xiangmu.setOnClickListener(view -> {
+            startActivity(new Intent(this,SecondActivity.class));
+            this.finish();
         });
     }
 
