@@ -1,19 +1,17 @@
 package com.example.newactivity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    private Button btn_1;
-    private Button btn_2;
+import androidx.appcompat.app.AppCompatActivity;
 
+public class MainActivity extends AppCompatActivity {
+    private Button btn_1, btn2;
+//    测试专用
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             //点击按钮提示  LENGTH_SHORT短暂显示 LENGTH_LONG 长时间显示
             Toast.makeText(this, "跳转到下一页", Toast.LENGTH_SHORT).show();
+        });
+        btn2 = findViewById(R.id.btn_1_xiangmu);
+        Intent intent;
+        btn2.setOnClickListener({
+                Intent intent = new Intent(this,SecondActivity.class);
+                startActivity(intent);
         });
     }
 
