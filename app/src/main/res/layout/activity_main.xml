@@ -4,25 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
 
-    <Button
-        android:id="@+id/btn_1_first"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFA07A"
-        android:text="学习测试 "
-        android:textColor="#880E4F"
-        tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn_1_shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#289339BA"
+            android:text="开始的开始"
+            android:textColor="#CF0DB0"
+            tools:ignore="HardcodedText,TextContrastCheck" />
 
-    <Button
-        android:id="@+id/btn_1_xiangmu"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="项目" />
     </LinearLayout>
 </LinearLayout>

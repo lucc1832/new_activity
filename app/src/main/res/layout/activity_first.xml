@@ -4,11 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".firstActivity">
-    <TextView
-        android:id="@+id/tv_1_nihao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好"
-        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <Button
+            android:id="@+id/btn_2_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFA07A"
+            android:text="学习测试 "
+            android:textColor="#880E4F"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_2_xiangmu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="项目" />
+    </LinearLayout>
 </LinearLayout>
