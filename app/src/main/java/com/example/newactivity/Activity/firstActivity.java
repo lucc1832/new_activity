@@ -1,13 +1,13 @@
 package com.example.newactivity.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.newactivity.R;
 
@@ -30,7 +30,7 @@ public class firstActivity extends AppCompatActivity {
         });
         btn_2_xiangmu = findViewById(R.id.btn_2_xiangmu);
         btn_2_xiangmu.setOnClickListener(view -> {
-            startActivity(new Intent(this, SecondActivity.class));
+            startActivity(new Intent(this, ProjectActivity.class));
 //           finish();
         });
     }

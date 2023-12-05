@@ -1,6 +1,8 @@
 <resources>
-<!--  translatable="false" 代表不可被翻译  -->
+    <!--  translatable="false" 代表不可被翻译  -->
     <string name="app_name" translatable="false">new activity</string>
     <string name="phonenumber">手机号:</string>
     <string name="hint_phone">输入手机号</string>
+    <string name="password">密&#160;&#160;&#160;码：</string>
+    <string name="hint_password">输入密码</string>
 </resources>
