@@ -1,14 +1,15 @@
-package com.example.newactivity;
+package com.example.newactivity.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.newactivity.R;
 
 public class firstActivity extends AppCompatActivity {
     private static final String TAG = "TAG" ;
@@ -24,7 +25,7 @@ public class firstActivity extends AppCompatActivity {
             startActivity(new Intent(this, SecondActivity.class));
             //点击按钮提示  LENGTH_SHORT短暂显示 LENGTH_LONG 长时间显示
             Toast.makeText(this, "跳转到下一页", Toast.LENGTH_SHORT).show();
-            Log.d(TAG, "123213");
+//            Log.d(TAG, "123213");
 //             finish();  //结束活动
         });
         btn_2_xiangmu = findViewById(R.id.btn_2_xiangmu);
