@@ -3,12 +3,14 @@
     <string name="app_name" translatable="false">new activity</string>
     <string name="phonenumber">手机号:</string>
     <string name="hint_phone">输入手机号</string>
-    <string name="password">密&#160;&#160;&#160;码：</string>
+    <string name="password">密&#160;&#160;&#160;&#160;码：</string>
     <string name="hint_password">输入密码</string>
     <string name="button_login">登录</string>
     <string name="tv_password_login">密码登录</string>
     <string name="tv_Register_new_member">注册会员</string>
     <string name="tv_reset_Password">重置密码</string>
     <string name="tv_get_verification_code">获取验证码</string>
-
+    <string name="tv_register_name">姓&#160;&#160;&#160;&#160;名：</string>
+    <string name="hint_register_name">输入真实姓名</string>
+    <string name="tv_sex">性&#160;&#160;&#160;&#160;别:</string>
 </resources>
