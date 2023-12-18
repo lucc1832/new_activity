@@ -6,16 +6,25 @@
     tools:context=".Activity.ProjectActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/btn_project_login"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:text="Login"
             android:textAllCaps="false" />
         <!--   textAllCaps="false" 取消英文大小写 -->
+        <Button
+            android:id="@+id/btn_project_TextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </LinearLayout>
