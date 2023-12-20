@@ -24,7 +24,7 @@
             android:name=".Activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.SecondActivity"
+            android:name=".Activity.LearningAssessmenActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.firstActivity"

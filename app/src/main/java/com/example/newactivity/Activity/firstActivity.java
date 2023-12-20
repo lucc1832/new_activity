@@ -22,7 +22,7 @@ public class firstActivity extends AppCompatActivity {
         btn_2_first = findViewById(R.id.btn_2_first);
         //显性试图点击跳转
         btn_2_first.setOnClickListener(view -> {
-            startActivity(new Intent(this, SecondActivity.class));
+            startActivity(new Intent(this, LearningAssessmenActivity.class));
             //点击按钮提示  LENGTH_SHORT短暂显示 LENGTH_LONG 长时间显示
             Toast.makeText(this, "跳转到下一页", Toast.LENGTH_SHORT).show();
 //            Log.d(TAG, "123213");
