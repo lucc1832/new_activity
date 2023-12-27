@@ -22,21 +22,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="文字样式：bold加粗"
+            android:text="文字样式：textStyle=bold加粗"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="文字样式：italic斜体"
+            android:text="文字样式：textStyle=italic斜体"
             android:textStyle="italic" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="文字样式normal正常"
+            android:text="文字样式：textStyle=normal正常"
             android:textStyle="normal" />
     </LinearLayout>
 
@@ -98,6 +98,7 @@
             android:text="singleLine:等同于MaxLines=1，true同意，旧时方法" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,9 +108,19 @@
             android:id="@+id/text_view_ellipsize"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:ellipsize="marquee"
             android:padding="10dp"
             android:singleLine="true"
-            android:text="ellipsize：超出部分用省略号代替：end最后，middle中间，start开头，none不省略，marquee跑马灯效果"
-            android:ellipsize="marquee"/>
+            android:text="ellipsize：超出部分用省略号代替：end最后，middle中间，start开头，none不省略，marquee跑马灯效果" />
+
+        <TextView
+            android:id="@+id/text_view_ellipsize_2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="marqueeRepeatLimit='marquee_forever'是永远循环,填写数字是循环几次" />
     </LinearLayout>
 </LinearLayout>
