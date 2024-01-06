@@ -123,4 +123,11 @@
             android:singleLine="true"
             android:text="marqueeRepeatLimit='marquee_forever'是永远循环,填写数字是循环几次" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JAVA代码测试" />
+
 </LinearLayout>
