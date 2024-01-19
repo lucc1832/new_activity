@@ -26,7 +26,7 @@ public class firstActivity extends AppCompatActivity {
             //点击按钮提示  LENGTH_SHORT短暂显示 LENGTH_LONG 长时间显示
             Toast.makeText(this, "跳转到下一页", Toast.LENGTH_SHORT).show();
 //            Log.d(TAG, "123213");
-//             finish();  //结束活动
+             finish();  //结束活动
         });
         btn_2_xiangmu = findViewById(R.id.btn_2_xiangmu);
         btn_2_xiangmu.setOnClickListener(view -> {

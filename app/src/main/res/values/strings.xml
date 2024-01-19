@@ -13,4 +13,6 @@
     <string name="tv_register_name">姓&#160;&#160;&#160;&#160;名：</string>
     <string name="hint_register_name">输入真实姓名</string>
     <string name="tv_sex">性&#160;&#160;&#160;&#160;别:</string>
+    <string name="tv_gongxifacai">恭喜发财</string>
+
 </resources>

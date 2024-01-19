@@ -108,16 +108,18 @@
             <RadioButton
                 android:id="@+id/radio_Button_man"
                 android:layout_width="wrap_content"
-                android:layout_marginLeft="8dp"
                 android:layout_height="wrap_content"
-                android:text="男" />
+                android:layout_marginLeft="8dp"
+                android:text="男"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <RadioButton
                 android:id="@+id/radio_Button_woman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:text="女" />
+                android:text="女"
+                tools:ignore="TouchTargetSizeCheck" />
         </RadioGroup>
 <LinearLayout
     android:layout_width="wrap_content"

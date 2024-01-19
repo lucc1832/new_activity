@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity.LearningAssessmenActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +14,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:text="Login"
             android:textAllCaps="false" />
         <!--   textAllCaps="false" 取消英文大小写 -->
@@ -21,9 +22,31 @@
             android:id="@+id/btn_Learning_TextView"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textAllCaps="false"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_Learning_View"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="View"
+            android:textAllCaps="false" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </LinearLayout>

@@ -9,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.newactivity.R;
 
 public class LearningAssessmenActivity extends AppCompatActivity {
-    Button btn_project_login, btn_project_TextView;
+    Button btn_project_login, btn_project_TextView, btn_project_View;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,9 +19,13 @@ public class LearningAssessmenActivity extends AppCompatActivity {
         btn_project_login.setOnClickListener(view -> {
             startActivity(new Intent(this, LoginActivity.class));
         });
-        btn_project_TextView=findViewById(R.id.btn_Learning_TextView);
+        btn_project_TextView = findViewById(R.id.btn_Learning_TextView);
         btn_project_TextView.setOnClickListener(view -> {
             startActivity(new Intent(this, TextViewActivity.class));
+        });
+        btn_project_View = findViewById(R.id.btn_Learning_View);
+        btn_project_View.setOnClickListener(view -> {
+            startActivity(new Intent(this, Viewactivity.class));
         });
     }
 }
