@@ -21,8 +21,10 @@ public class TextViewActivity extends AppCompatActivity {
 
         //getText() 获取文字。setText("hello") 设置文字
         text_view_ellipsize.setSelected(true);
+        text_view_hello =findViewById(R.id.text_view_hello);
         String text_view_helloText = text_view_hello.getText().toString();
         text_view_hello.setTextColor(Color.RED);
         text_view_hello.setTextSize(25.0F);
     }
+
 }
