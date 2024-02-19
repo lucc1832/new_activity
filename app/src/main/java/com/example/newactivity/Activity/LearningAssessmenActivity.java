@@ -22,6 +22,7 @@ public class LearningAssessmenActivity extends AppCompatActivity {
         btn_project_TextView = findViewById(R.id.btn_Learning_TextView);
         btn_project_TextView.setOnClickListener(view -> {
             startActivity(new Intent(this, TextViewActivity.class));
+
         });
         btn_project_View = findViewById(R.id.btn_Learning_View);
         btn_project_View.setOnClickListener(view -> {
