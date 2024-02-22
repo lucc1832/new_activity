@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activity.Viewactivity">
+    tools:context=".Activity.Viewactivity_Button">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,13 +13,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_gongxifacai"
+            android:id="@+id/tv_xianshi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@color/grey"
             android:gravity="center"
-            android:text="@string/tv_gongxifacai"
+            android:text="@string/tv_xianshi"
             android:textColor="#455A64"
             android:textSize="40sp" />
 
@@ -37,10 +37,21 @@
             android:id="@+id/btn_viewactivity_java"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:background="#DF8E8E"
             android:text="java代码改变"
+            android:textAllCaps="false"
             android:textColor="@color/white" />
 
+        <Button
+            android:id="@+id/btn_toast_short"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#DF8E8E"
+            android:text="toast弹窗短时间"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </LinearLayout>

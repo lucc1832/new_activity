@@ -26,7 +26,7 @@ public class LearningAssessmenActivity extends AppCompatActivity {
         });
         btn_project_View = findViewById(R.id.btn_Learning_View);
         btn_project_View.setOnClickListener(view -> {
-            startActivity(new Intent(this, Viewactivity.class));
+            startActivity(new Intent(this, Viewactivity_Button.class));
         });
     }
 }

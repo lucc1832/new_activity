@@ -12,7 +12,7 @@
         android:theme="@style/Theme.NewActivity"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.Viewactivity"
+            android:name=".Activity.Viewactivity_Button"
             android:exported="false" />
         <activity
             android:name=".Activity.NewsActivity"
