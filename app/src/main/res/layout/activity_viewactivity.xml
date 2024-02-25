@@ -24,7 +24,6 @@
             android:textSize="40sp" />
 
         <Button
-            android:id="@+id/btn_viewactivity_gaibian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -37,7 +36,7 @@
             android:id="@+id/btn_viewactivity_java"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:background="#DF8E8E"
             android:text="java代码改变"
             android:textAllCaps="false"
@@ -47,11 +46,20 @@
             android:id="@+id/btn_toast_short"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:background="#DF8E8E"
             android:text="toast弹窗短时间"
             android:textAllCaps="false"
             android:textColor="@color/white" />
 
+        <Button
+            android:id="@+id/btn_toast_long"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#612222"
+            android:text="toast弹窗长时间"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
     </LinearLayout>
 </LinearLayout>

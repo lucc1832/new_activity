@@ -24,7 +24,7 @@ public class firstActivity extends AppCompatActivity {
         btn_2_first.setOnClickListener(view -> {
             startActivity(new Intent(this, LearningAssessmenActivity.class));
             //点击按钮提示  LENGTH_SHORT短暂显示 LENGTH_LONG 长时间显示
-            Toast.makeText(this, "跳转到下一页", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "记得每天更新", Toast.LENGTH_SHORT).show();
 //            Log.d(TAG, "123213");
              finish();  //结束活动
         });
