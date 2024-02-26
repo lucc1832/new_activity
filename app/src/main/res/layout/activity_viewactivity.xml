@@ -55,7 +55,7 @@
         <Button
             android:id="@+id/btn_toast_long"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/btnheight"
             android:layout_marginTop="8dp"
             android:background="#612222"
             android:text="toast弹窗长时间"

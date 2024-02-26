@@ -18,15 +18,18 @@ public class Viewactivity_Button extends AppCompatActivity implements View.OnCli
     // 快捷TAG方法
     private static final String TAG = "Viewactivity_Button";
     private Button btn_toast_long, btn_viewactivity_java, btn_toast_short;
-private String[] contents = {
-        "恭喜发财",
-        "五福临门",
-        "心想事成",
-        "万事如意",
-        "开心一整年",
-        "烦恼消失掉",
-        "开心常围绕"
-};
+
+    //private String[] contents = {
+//        "恭喜发财",
+//        "五福临门",
+//        "心想事成",
+//        "万事如意",
+//        "开心一整年",
+//        "烦恼消失掉",
+//        "开心常围绕"
+//};
+    private String[] contents;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +55,13 @@ private String[] contents = {
 //        textView_gongxifacai.setText("恭喜发财");
 //    }
 //}
-
+        contents = getResources().getStringArray(R.array.contents);
+        for (int i = 0; i < contents.length; i++) {
+            Log.d("tag","-----------contents--------------"+contents[i]);
+        }
     }
+
+
     //点击事件button 第二种方案
     @Override
     public void onClick(View view) {
@@ -65,7 +73,7 @@ private String[] contents = {
 //            } else if (id == R.id.btn_toast_short) {
 //                Toast.makeText(this, "弹出短弹窗", Toast.LENGTH_SHORT).show();
 //            }
-    // 点击事件button 第三种方案
+        // 点击事件button 第三种方案
         switch (id) {
             case R.id.btn_viewactivity_java:
                 tv_xianshi.setText("牛气冲天");
@@ -81,24 +89,24 @@ private String[] contents = {
             default:
                 break;
         }
-   }
+    }
 
-         //xml onclick 变量名 viewText
+    //xml onclick 变量名 viewText
     public void viewText(View view) {
-        Log.d("tag","-----执行了-viewText方法--------"+tv_xianshi.getText().toString());
+        Log.d("tag", "-----执行了-viewText方法--------" + tv_xianshi.getText().toString());
         //Random方法 设置一个随机数
         Random random = new Random();
         //设置变量读取随机数里的长度 可以设置数字
         int index = random.nextInt(contents.length);
         String newStr = contents[index];
         tv_xianshi.setText(newStr);
-        Log.d(TAG, "viewText: -----执行了-viewText方法--------"+tv_xianshi.getText().toString()););
+        Log.d(TAG, "viewText: -----执行了-viewText方法--------" + tv_xianshi.getText().toString());
     }
 
-   class  myClickListener implements View.OnClickListener{
-       @Override
-       public void onClick(View view) {
-           tv_xianshi.setText("恭喜发财2");
-       }
-   }
+    class myClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View view) {
+            tv_xianshi.setText("恭喜发财2");
+        }
+    }
 }
