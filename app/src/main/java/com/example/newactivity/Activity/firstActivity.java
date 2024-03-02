@@ -26,7 +26,7 @@ public class firstActivity extends AppCompatActivity {
             //点击按钮提示  LENGTH_SHORT短暂显示 LENGTH_LONG 长时间显示
             Toast.makeText(this, "记得每天更新", Toast.LENGTH_SHORT).show();
 //            Log.d(TAG, "123213");
-             finish();  //结束活动
+//             finish();  //结束活动
         });
         btn_2_xiangmu = findViewById(R.id.btn_2_xiangmu);
         btn_2_xiangmu.setOnClickListener(view -> {
@@ -35,21 +35,21 @@ public class firstActivity extends AppCompatActivity {
         });
     }
 
-    public boolean OnCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    public boolean OnOptionsItemSelected(MenuItem menuItem) {
-        switch (menuItem.getItemId()) {
-            case R.id.add_item:
-                Toast.makeText(this, "添加组件", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.remove_item:
-                Toast.makeText(this, "删除组件", Toast.LENGTH_LONG).show();
-                break;
-            default:
-        }
-        return true;
-    }
+//    public boolean OnCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.main, menu);
+//        return true;
+//    }
+//
+//    public boolean OnOptionsItemSelected(MenuItem menuItem) {
+//        switch (menuItem.getItemId()) {
+//            case R.id.menu_item1:
+//                Toast.makeText(this, "添加组件", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.menu_item2:
+//                Toast.makeText(this, "删除组件", Toast.LENGTH_LONG).show();
+//                break;
+//            default:
+//        }
+//        return true;
+//    }
 }

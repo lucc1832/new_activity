@@ -14,8 +14,11 @@
     <string name="hint_register_name">输入真实姓名</string>
     <string name="tv_sex">性&#160;&#160;&#160;&#160;别:</string>
     <string name="tv_xianshi">恭喜发财</string>
+    <string name="view">View</string>
+    <string name="menu">menu</string>
+    <string name="account">账号 :</string>
     <string-array name="contents">
-<!-- 要想保留“” 需要在前面加\ -->
+        <!-- 要想保留“” 需要在前面加\ -->
         <item>恭喜发财</item>
         <item>五福临门</item>
         <item>心想事成</item>
