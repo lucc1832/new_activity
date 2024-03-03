@@ -55,6 +55,7 @@ public class Viewactivity_Button extends AppCompatActivity implements View.OnCli
 //        textView_gongxifacai.setText("恭喜发财");
 //    }
 //}
+        //获取数组长度
         contents = getResources().getStringArray(R.array.contents);
         for (int i = 0; i < contents.length; i++) {
             Log.d("tag","-----------contents--------------"+contents[i]);
