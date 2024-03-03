@@ -21,6 +21,7 @@
                 android:id="@+id/tv_login_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
                 android:layout_gravity="center"
                 android:text="@string/phonenumber" />
 
@@ -31,11 +32,11 @@
                 android:layout_marginLeft="8dp"
                 android:background="@drawable/edit_bg_red"
                 android:hint="@string/hint_phone"
+                android:textSize="20sp"
                 android:inputType="phone|number"
                 android:paddingRight="10dp"
                 android:paddingLeft="15dp"
-                android:textColorHint="#95A1AA"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:textColorHint="#95A1AA" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,7 +49,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/password" />
+                android:textSize="20sp"
+                android:text="@string/Verification_code" />
 
             <EditText
                 android:id="@+id/et_login_password"
@@ -56,9 +58,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_weight="1"
+                android:textSize="20sp"
                 android:background="@drawable/edit_bg_red"
-                android:hint="@string/hint_password"
-                android:inputType="textPassword"
+                android:hint="@string/hint_Verification_code"
+                android:inputType="number"
                 android:paddingRight="10dp"
                 android:paddingLeft="15dp"
                 android:textColorHint="#95A1AA"
@@ -69,6 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:textSize="20sp"
                 android:text="@string/tv_get_verification_code"
                 android:textColor="@color/red" />
 
@@ -88,8 +92,9 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -97,6 +102,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
                 android:text="@string/tv_password_login" />
 
             <View
@@ -110,6 +117,9 @@
                 android:id="@+id/tv_Register_new_member"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:text="@string/tv_Register_new_member" />
 
             <View
@@ -117,12 +127,15 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
+                android:textSize="18sp"
                 android:background="@color/red" />
 
             <TextView
                 android:id="@+id/tv_reset_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
                 android:background="@color/white"
                 android:text="@string/tv_reset_Password" />
         </LinearLayout>
