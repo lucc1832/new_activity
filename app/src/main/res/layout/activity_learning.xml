@@ -55,13 +55,12 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/q123"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="123"
-            android:textAllCaps="false" />
+            android:onClick="toBaidu"
+            android:text="隐形跳转试图" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
