@@ -61,5 +61,13 @@
             android:text="toast弹窗长时间"
             android:textAllCaps="false"
             android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_viewactivity_jump"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnheight"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_bg_selector"
+            android:text="跳转并返回信息"
+            android:textAllCaps="false" />
     </LinearLayout>
 </LinearLayout>

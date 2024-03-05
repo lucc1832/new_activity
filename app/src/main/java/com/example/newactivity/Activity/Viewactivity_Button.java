@@ -1,5 +1,6 @@
 package com.example.newactivity.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,10 +15,10 @@ import com.example.newactivity.R;
 import java.util.Random;
 
 public class Viewactivity_Button extends AppCompatActivity implements View.OnClickListener {
-    private TextView tv_xianshi;
     // 快捷TAG方法
     private static final String TAG = "Viewactivity_Button";
-    private Button btn_toast_long, btn_viewactivity_java, btn_toast_short;
+    private TextView tv_xianshi;
+    private Button btn_toast_long, btn_viewactivity_java, btn_toast_short, btn_viewactivity_jump;
 
     //private String[] contents = {
 //        "恭喜发财",
@@ -39,6 +40,7 @@ public class Viewactivity_Button extends AppCompatActivity implements View.OnCli
         btn_toast_short = findViewById(R.id.btn_toast_short);
         btn_viewactivity_java = findViewById(R.id.btn_viewactivity_java);
         btn_toast_long = findViewById(R.id.btn_toast_long);
+        btn_viewactivity_jump = findViewById(R.id.btn_viewactivity_jump);
         //点击事件button 第一种方案
 //        btn_viewactivity_java.setOnClickListener(view -> {
 //            textView_gongxifacai.setText("牛气冲天");
@@ -58,10 +60,45 @@ public class Viewactivity_Button extends AppCompatActivity implements View.OnCli
         //获取数组长度
         contents = getResources().getStringArray(R.array.contents);
         for (int i = 0; i < contents.length; i++) {
-            Log.d("tag","-----------contents--------------"+contents[i]);
+            Log.d("tag", "-----------contents--------------" + contents[i]);
         }
-    }
 
+        //分散传递
+//        btn_viewactivity_jump.setOnClickListener(view -> {
+//            Intent intent = new Intent(this, TextViewActivity.class);
+//            intent.putExtra("username","luck");
+//            intent.putExtra("age",24);
+//            intent.putExtra("isLogin",true);
+//           startActivity(intent);
+//        });
+        // 打包传递
+//        btn_viewactivity_jump.setOnClickListener(view -> {
+//            Intent intent = new Intent(this, TextViewActivity.class);
+//            Bundle bundle = new Bundle();
+//            bundle.putString("username", "我的家乡");
+//            bundle.putInt("age", 24);
+//            bundle.putBoolean("isLogin", true);
+//            intent.putExtras(bundle);
+//            startActivity(intent);
+//        });
+        //      打包多个传递
+        btn_viewactivity_jump.setOnClickListener(view -> {
+            Intent intent = new Intent(this, TextViewActivity.class);
+            Bundle bundle1 = new Bundle();
+            Bundle bundle2 = new Bundle();
+            bundle1.putString("username", "我的家乡");
+            bundle1.putInt("age", 24);
+            bundle1.putBoolean("isLogin", true);
+
+            bundle2.putString("username", "我的家乡");
+            bundle2.putInt("age", 24);
+            bundle2.putBoolean("isLogin", true);
+
+            intent.putExtra("username",bundle1);
+            intent.putExtra("username",bundle2);
+            startActivity(intent);
+        });
+    }
 
     //点击事件button 第二种方案
     @Override
@@ -103,6 +140,7 @@ public class Viewactivity_Button extends AppCompatActivity implements View.OnCli
         tv_xianshi.setText(newStr);
         Log.d(TAG, "viewText: -----执行了-viewText方法--------" + tv_xianshi.getText().toString());
     }
+
 
     class myClickListener implements View.OnClickListener {
         @Override

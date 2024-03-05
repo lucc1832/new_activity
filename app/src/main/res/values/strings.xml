@@ -26,6 +26,7 @@
     <string name="Please_enter_password">请输入密码</string>
 
     <string name="Please_enter_password2">再次确认密码</string>
+    <string name="Dialog">Diaolog</string>
 
     <string-array name="contents">
         <!-- 要想保留“” 需要在前面加\ -->

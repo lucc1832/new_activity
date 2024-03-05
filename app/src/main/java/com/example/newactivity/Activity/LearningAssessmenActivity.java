@@ -1,10 +1,12 @@
 package com.example.newactivity.Activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.newactivity.R;
@@ -62,5 +64,20 @@ public class LearningAssessmenActivity extends AppCompatActivity {
         intent.setAction("android.intent.action.PICK");
         intent.setType("image/*");
         startActivity(intent);
+    }
+
+    public void popDialog(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("温馨提示");
+        builder.setMessage("强制更新，取消强制退出");
+        builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                    finish();
+            }
+        });
+        builder.setPositiveButton("确定",null);
+        AlertDialog alertDialog =builder.create();
+        alertDialog.show();
     }
 }
