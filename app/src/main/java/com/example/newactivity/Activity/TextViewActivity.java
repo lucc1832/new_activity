@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.newactivity.R;
+import com.example.newactivity.bean.User;
 
 public class TextViewActivity extends AppCompatActivity {
     TextView text_view_ellipsize, text_view_hello;
@@ -39,17 +40,21 @@ public class TextViewActivity extends AppCompatActivity {
 //            Log.d(TAG, "onCreate: -------age-------" + age);
 //            Log.d(TAG, "onCreate: -------isLogin-------" + isLogin);
 //        }
-//         打包传递
-//
         //  多个打包传递
+//        Intent intent = getIntent();
+//        if (intent != null) {
+//            Bundle bundle1 = intent.getExtras();
+//            Bundle bundle2 = intent.getExtras();
+//            String username = bundle1.getString("username");
+//            String username2 = bundle2.getString("username");
+//            Log.d(TAG, "onCreate: ------username--------" + username);
+//            Log.d(TAG, "onCreate: ------username--------" + username2);
+//        }
+        // 接受一个类传递
         Intent intent = getIntent();
         if (intent != null) {
-            Bundle bundle1 = intent.getExtras();
-            Bundle bundle2 = intent.getExtras();
-            String username = bundle1.getString("username");
-            String username2 = bundle2.getString("username");
-            Log.d(TAG, "onCreate: ------username--------" + username);
-            Log.d(TAG, "onCreate: ------username--------" + username2);
+            User user = (User) intent.getSerializableExtra("user");
+            Log.d("tag","------user------"+user);
         }
     }
 

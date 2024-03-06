@@ -3,16 +3,20 @@ package com.example.newactivity.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.newactivity.R;
 
 public class LearningAssessmenActivity extends AppCompatActivity {
-    Button btn_project_login, btn_project_TextView, btn_project_View, btn_project_menu;
+   private Button btn_project_login, btn_project_TextView, btn_project_View, btn_project_menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +24,7 @@ public class LearningAssessmenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_learning);
         btn_project_login = findViewById(R.id.btn_Learning_login);
         btn_project_login.setOnClickListener(view -> {
-            startActivity(new Intent(this, LoginActivity.class));
-            finish();
+            startActivity(new Intent(this, Login_password_Activity.class));
         });
         btn_project_TextView = findViewById(R.id.btn_Learning_TextView);
         btn_project_TextView.setOnClickListener(view -> {
@@ -79,5 +82,24 @@ public class LearningAssessmenActivity extends AppCompatActivity {
         builder.setPositiveButton("确定",null);
         AlertDialog alertDialog =builder.create();
         alertDialog.show();
+    }
+
+    public void Return_data(View view) {
+            Intent intent = new Intent(this, Return_dataActivity.class);
+           startActivityForResult(intent,0);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode ==0 &&resultCode ==1 &&data !=null);{
+            String  userNanme = data.getStringExtra("userNanme");
+            Log.d("tag","-----result------" +userNanme);
+        }
+    }
+
+    public void sharedpreferencesActivity(View view) {
+        Intent intent =new Intent(this, SharedpreferencesActivity.class);
+        startActivity(intent);
     }
 }

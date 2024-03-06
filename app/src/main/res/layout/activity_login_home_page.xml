@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.login_home_pageActivity">
+
+    <TextView
+        android:id="@+id/tv_login_home_page_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:text="欢迎你："
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_login_home_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_bg_selector"
+        android:gravity="center"
+        android:onClick="logout"
+        android:text="退出登录" />
+
+</LinearLayout>

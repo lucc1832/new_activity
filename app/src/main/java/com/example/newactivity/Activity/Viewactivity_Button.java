@@ -11,12 +11,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.newactivity.R;
+import com.example.newactivity.bean.User;
 
+import java.io.Serializable;
 import java.util.Random;
 
 public class Viewactivity_Button extends AppCompatActivity implements View.OnClickListener {
     // 快捷TAG方法
-    private static final String TAG = "Viewactivity_Button";
+    private static final String TAG = "tag";
     private TextView tv_xianshi;
     private Button btn_toast_long, btn_viewactivity_java, btn_toast_short, btn_viewactivity_jump;
 
@@ -82,20 +84,31 @@ public class Viewactivity_Button extends AppCompatActivity implements View.OnCli
 //            startActivity(intent);
 //        });
         //      打包多个传递
+//        btn_viewactivity_jump.setOnClickListener(view -> {
+//            Intent intent = new Intent(this, TextViewActivity.class);
+//            Bundle bundle1 = new Bundle();
+//            Bundle bundle2 = new Bundle();
+//            bundle1.putString("username", "我的家乡");
+//            bundle1.putInt("age", 24);
+//            bundle1.putBoolean("isLogin", true);
+//
+//            bundle2.putString("username", "我的家乡");
+//            bundle2.putInt("age", 24);
+//            bundle2.putBoolean("isLogin", true);
+//
+//            intent.putExtra("username",bundle1);
+//            intent.putExtra("username",bundle2);
+//            startActivity(intent);
+//        });
+        //      传递一个对象
         btn_viewactivity_jump.setOnClickListener(view -> {
             Intent intent = new Intent(this, TextViewActivity.class);
-            Bundle bundle1 = new Bundle();
-            Bundle bundle2 = new Bundle();
-            bundle1.putString("username", "我的家乡");
-            bundle1.putInt("age", 24);
-            bundle1.putBoolean("isLogin", true);
-
-            bundle2.putString("username", "我的家乡");
-            bundle2.putInt("age", 24);
-            bundle2.putBoolean("isLogin", true);
-
-            intent.putExtra("username",bundle1);
-            intent.putExtra("username",bundle2);
+            User user = new User();
+            user.setUserName("本兮");
+            user.setAge(24);
+            user.setLogin(true);
+            user.setGender("女");
+            intent.putExtra("user",(Serializable) user);
             startActivity(intent);
         });
     }

@@ -12,6 +12,15 @@
         android:theme="@style/Theme.NewActivity"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.login_home_pageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SharedpreferencesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Return_dataActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.Login_password_Activity"
             android:exported="false" />
         <activity
