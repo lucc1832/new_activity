@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.newactivity.R;
 import com.example.newactivity.bean.User;
 
-import java.io.Serializable;
 import java.util.Random;
 
 public class Viewactivity_Button extends AppCompatActivity implements View.OnClickListener {
@@ -108,7 +107,7 @@ public class Viewactivity_Button extends AppCompatActivity implements View.OnCli
             user.setAge(24);
             user.setLogin(true);
             user.setGender("女");
-            intent.putExtra("user",(Serializable) user);
+            intent.putExtra("user", user);
             startActivity(intent);
         });
     }

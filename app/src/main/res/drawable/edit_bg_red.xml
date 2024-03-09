@@ -6,7 +6,7 @@
     <!-- 背景边框颜色    -->
     <stroke
         android:width="2dp"
-        android:color="@color/red"
+        android:color="@color/green_200"
         />
-    <corners android:radius="10dp" />
+    <corners android:radius="20dp" />
 </shape>

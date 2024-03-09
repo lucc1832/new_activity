@@ -17,6 +17,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
         tv_Password_login = findViewById(R.id.tv_Password_login);
         tv_Register_new_member=findViewById(R.id.tv_Register_new_member);
 

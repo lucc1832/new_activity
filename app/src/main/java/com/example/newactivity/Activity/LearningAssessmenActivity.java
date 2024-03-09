@@ -3,11 +3,9 @@ package com.example.newactivity.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -22,6 +20,9 @@ public class LearningAssessmenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learning);
+
+
+
         btn_project_login = findViewById(R.id.btn_Learning_login);
         btn_project_login.setOnClickListener(view -> {
             startActivity(new Intent(this, Login_password_Activity.class));
