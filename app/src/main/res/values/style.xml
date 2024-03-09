@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="MybtnStyle" parent="Theme.AppCompat.Light">
+    <style name="My_btn_Style" parent="Theme.AppCompat.Light">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/btn_bg_selector</item>

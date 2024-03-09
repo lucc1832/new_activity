@@ -86,7 +86,7 @@
 
     <Button
         android:id="@+id/btn_login_password_login"
-        style="@style/MybtnStyle"
+        style="@style/My_btn_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"

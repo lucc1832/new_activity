@@ -18,26 +18,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="更换头像"
+                android:text="@string/Change_avatars"
                 android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/imgv_avatar"
+                android:id="@+id/img_avatar"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerInParent="true"
+                android:contentDescription="@string/icon"
                 android:src="@mipmap/ic_launcher" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imgv_avatar"
+                android:layout_below="@+id/img_avatar"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btn_edit_login_take_pictures"
+                    style="@style/My_btn_Style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/btn_bg_selector"
@@ -45,9 +47,11 @@
 
                 <Button
                     android:id="@+id/btn_edit_login_album"
+                    style="@style/My_btn_Style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     android:background="@drawable/btn_bg_selector"
                     android:text="相册" />
 
