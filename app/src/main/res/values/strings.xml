@@ -40,5 +40,10 @@
         <item>烦恼消失掉</item>
         <item>开心常围绕</item>
     </string-array>
-
+<string-array name="cities">
+    <item>长沙</item>
+    <item>锦州</item>
+    <item>郴州</item>
+    <item>沈阳</item>
+</string-array>
 </resources>
